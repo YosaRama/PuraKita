@@ -10,6 +10,14 @@
       integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
       crossorigin="anonymous"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat&family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
+    />
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
@@ -17,7 +25,7 @@
 
     <section id="menuSection">
       <div>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-none fixed-top">
+        <nav id="menu" class="navbar navbar-expand-lg navbar-dark fixed-top">
           <a class="navbar-brand" href="#">PuraKita</a>
           <button
             class="navbar-toggler"
@@ -51,7 +59,7 @@
             </ul>
           </div>
         </nav>
-        <div class="row">
+        <div class="container-fluid menuContent">
           <img
             class="menuBackground col-12"
             src="images/Kintamani.jpg"
@@ -59,7 +67,10 @@
           />
           <div class="menuTitle col-12">
             <h1>Pura Kita</h1>
-            <hr class="mainUnderline" />
+            <div class="container-fluid col-lg-2 col-sm-6">
+              <hr class="menuUnderline" />
+            </div>
+
             <p>Dari Kita Untuk Yang Maha Esa</p>
           </div>
         </div>
@@ -83,20 +94,22 @@
           <div class="carousel-item active">
             <div class="container-fluid">
               <div class="row">
-                <div class="col-lg-8 col-sm-12">
+                <div class="content col-lg-8 col-sm-12 animate__animated">
                   <h3>Sejarah</h3>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                    Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                    laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                    irure dolor in reprehenderit in voluptate velit esse cillum
-                    dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                    cupidatat non proident, sunt in culpa qui officia deserunt
-                    mollit anim id est laborum.
-                  </p>
+                  <div class="container col-sm-12 col-lg-8">
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                      ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                      Duis aute irure dolor in reprehenderit in voluptate velit
+                      esse cillum dolore eu fugiat nulla pariatur. Excepteur
+                      sint occaecat cupidatat non proident, sunt in culpa qui
+                      officia deserunt mollit anim id est laborum.
+                    </p>
+                  </div>
                 </div>
-                <div class="contentImg col-lg-4 col-sm-12">
+                <div class="contentImg col-lg-4 col-sm-12 animate__animated">
                   <img src="images/1.jpeg" class="w-100" alt="..." />
                 </div>
               </div>
@@ -106,21 +119,23 @@
           <div class="carousel-item">
             <div class="container-fluid">
               <div class="row">
-                <div class="contentImg col-lg-4 col-sm-12">
-                  <img src="images/2.jpeg" class="w-100" alt="..." />
+                <div class="content col-lg-8 col-sm-12 animate__animated">
+                  <h3 style="font-weight: 500">About Us</h3>
+                  <div class="container col-sm-12 col-lg-8">
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                      ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                      Duis aute irure dolor in reprehenderit in voluptate velit
+                      esse cillum dolore eu fugiat nulla pariatur. Excepteur
+                      sint occaecat cupidatat non proident, sunt in culpa qui
+                      officia deserunt mollit anim id est laborum.
+                    </p>
+                  </div>
                 </div>
-                <div class="col-lg-8 col-sm-12">
-                  <h3>About Us</h3>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                    Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                    laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                    irure dolor in reprehenderit in voluptate velit esse cillum
-                    dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                    cupidatat non proident, sunt in culpa qui officia deserunt
-                    mollit anim id est laborum.
-                  </p>
+                <div class="contentImg col-lg-4 col-sm-12 animate__animated">
+                  <img src="images/2.jpeg" class="w-100" alt="..." />
                 </div>
               </div>
             </div>
@@ -129,26 +144,27 @@
           <div class="carousel-item">
             <div class="container-fluid">
               <div class="row">
-                <div class="col-lg-8 col-sm-12">
-                  <h3>Something</h3>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                    Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                    laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                    irure dolor in reprehenderit in voluptate velit esse cillum
-                    dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                    cupidatat non proident, sunt in culpa qui officia deserunt
-                    mollit anim id est laborum.
-                  </p>
+                <div class="content col-lg-8 col-sm-12 animate__animated">
+                  <h3 style="font-weight: 500">Something</h3>
+                  <div class="container col-sm-12 col-lg-8">
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                      ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                      Duis aute irure dolor in reprehenderit in voluptate velit
+                      esse cillum dolore eu fugiat nulla pariatur. Excepteur
+                      sint occaecat cupidatat non proident, sunt in culpa qui
+                      officia deserunt mollit anim id est laborum.
+                    </p>
+                  </div>
                 </div>
-                <div class="contentImg col-lg-4 col-sm-12">
+                <div class="contentImg col-lg-4 col-sm-12 animate__animated">
                   <img src="images/3.jpeg" class="w-100" alt="..." />
                 </div>
               </div>
             </div>
           </div>
-
         </div>
         <a
           class="carousel-control-prev"
@@ -172,7 +188,7 @@
     <!-- DONATION SECTION -->
 
     <section id="donationSection">
-      <div class="container">
+      <div class="container donationContent">
         <h1>Dana Punia</h1>
         <p>Total Dana Punia</p>
         <div class="container col-lg-3 col-sm-12">
@@ -196,26 +212,22 @@
     <!-- DONATOR SECTION -->
 
     <section id="donator">
-      <div
-        id="carouselExampleCaptions"
-        class="carousel slide"
-        data-ride="carousel"
-      >
+      <div id="carouselDonator" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
           <li
-            data-target="#carouselExampleCaptions"
+            data-target="#carouselDonator"
             data-slide-to="0"
             class="active"
           ></li>
-          <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-          <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+          <li data-target="#carouselDonator" data-slide-to="1"></li>
+          <li data-target="#carouselDonator" data-slide-to="2"></li>
         </ol>
         <div class="carousel-inner">
           <div class="carousel-item active">
             <div class="container-fluid">
               <img src="images/Yosa.JPG" class="donatorImg" alt="..." />
             </div>
-            <div class="donaturBio col-12">
+            <div class="donatorBio col-12">
               <h5>I Putu Yosa Rama Dinata</h5>
               <p>Rp.10.000</p>
             </div>
@@ -224,7 +236,7 @@
             <div class="container-fluid">
               <img src="images/BliGede.jpg" class="donatorImg" alt="..." />
             </div>
-            <div class="donaturBio col-12">
+            <div class="donatorBio col-12">
               <h5>Bli Gede</h5>
               <p>Rp.1.990.000</p>
             </div>
@@ -233,7 +245,7 @@
             <div class="container-fluid">
               <img src="images/Made.jpg" class="donatorImg" alt="..." />
             </div>
-            <div class="donaturBio col-12">
+            <div class="donatorBio col-12">
               <h5>I Made Core Of The Core</h5>
               <p>Rp.9.000.000</p>
             </div>
@@ -241,7 +253,7 @@
         </div>
         <a
           class="carousel-control-prev"
-          href="#carouselExampleCaptions"
+          href="#carouselDonator"
           role="button"
           data-slide="prev"
         >
@@ -250,7 +262,7 @@
         </a>
         <a
           class="carousel-control-next"
-          href="#carouselExampleCaptions"
+          href="#carouselDonator"
           role="button"
           data-slide="next"
         >
@@ -258,32 +270,15 @@
           <span class="sr-only">Next</span>
         </a>
       </div>
-    </div>
-
+      <div class="comment">
         <div class="container col-lg-4 col-sm-12">
-          <hr style="border: black 2px dashed;">
+          <hr style="border: black 2px dashed" />
         </div>
-        <h3> Domugi Memargi Antar</h3>
+        <h3>Domugi Memargi Antar</h3>
+      </div>
     </section>
 
-    <!-- FOOTER SECTION -->
-
-    <footer id="footer">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-12">
-            <h2>Pura Kita</h2>
-          </div>
-          <div class="col-12">
-            <p>contact : 081236947277</p>
-          </div>
-        </div>
-      </div>
-    </footer>
-
-
     <!-- SCRIPT -->
-
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
@@ -300,6 +295,55 @@
       crossorigin="anonymous"
     ></script>
 
+    <!-- NAVBAR SCRIPT -->
+    <script>
+      function checkScroll() {
+        var startY = $(".navbar").height() * 2; //The point where the navbar changes in px
 
+        if ($(window).scrollTop() > startY) {
+          $(".navbar").addClass("scrolled");
+        } else {
+          $(".navbar").removeClass("scrolled");
+        }
+      }
+
+      if ($(".navbar").length > 0) {
+        $(window).on("scroll load resize", function () {
+          checkScroll();
+        });
+      }
+
+      // CONTENT SCRIPT
+
+      function contentScroll() {
+        var startY = $(".content").height(); //The point where the navbar changes in px
+
+        if ($(window).scrollTop() > startY) {
+          $(".content").addClass("animate__fadeInUp");
+          $(".contentImg").addClass("animate__fadeInRight");
+        }
+      }
+
+      if ($(".content").length > 0) {
+        $(window).on("scroll load resize", function () {
+          contentScroll();
+        });
+      }
+    </script>
   </body>
+
+  <!-- FOOTER SECTION -->
+
+  <footer id="footer">
+    <div class="footerContent container-fluid">
+      <div class="row">
+        <div class="col-12">
+          <h2>Pura Kita</h2>
+        </div>
+        <div class="col-12">
+          <p>contact : 081236947277</p>
+        </div>
+      </div>
+    </div>
+  </footer>
 </html>

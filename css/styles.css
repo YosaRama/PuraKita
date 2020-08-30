@@ -3,35 +3,74 @@ body {
   width: 100%;
   height: auto;
   overflow-x: hidden;
+  font-family: "Montserrat", sans-serif;
 }
 
 /* MENU SECTION */
 
 #menuSection {
   background-color: black;
+  color: aliceblue;
+  text-align: center;
 }
-
+.navbar-brand {
+  font-family: "Pacifico", cursive;
+}
 .menuBackground {
   position: relative;
   z-index: 0;
   opacity: 40%;
+  padding: 0%;
 }
 
 .menuTitle {
-  text-align: center;
+  top: 30vw;
+  bottom: 0%;
   position: absolute;
-  top: 50%;
-  color: aliceblue;
 }
 
-.mainUnderline {
-  color: aliceblue;
+.menuTitle h1 {
+  font-family: "Pacifico", cursive;
+  font-size: 5vh;
+}
+
+.menuContent {
+  padding: 0%;
+}
+
+.menuUnderline {
+  border: aliceblue 3px solid;
+}
+
+.navbar {
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+  -ms-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+
+.navbar.scrolled {
+  background: rgb(68, 68, 68); /* IE */
+  background: rgba(0, 0, 0, 1); /* NON-IE */
 }
 
 /* CAROUSEL SECTION */
 
 #carouselContentSection {
   text-align: left;
+}
+
+.content {
+  text-align: center;
+  font-size: 1.2rem;
+  padding-bottom: 50px;
+}
+
+.content h3 {
+  padding: 7% 0%;
+  font-family: "Merriweather", serif;
+  font-size: 2.5rem;
 }
 
 .contentImg {
@@ -47,10 +86,22 @@ body {
   padding: 3%;
 }
 
+.donationContent p {
+  margin: 20px 0%;
+  font-size: 1.5rem;
+}
+
+.donationContent h1 {
+  font-family: "Pacifico", cursive;
+  font-size: 4rem;
+  padding-bottom: 5%;
+}
+
 .totalDonation {
   color: white;
   border: white solid 2px;
   border-radius: 40px;
+  opacity: 0.8;
 }
 
 .donationButton {
@@ -60,7 +111,6 @@ body {
 
 .gopayDonation {
   width: 200px;
-  height: auto;
 }
 
 /* DONATOR SECTION */
@@ -77,15 +127,35 @@ body {
   height: 300px;
 }
 
-.donaturBio {
+.donatorBio {
   color: black;
   padding: 10px;
+}
+
+.donatorBio h5 {
+  font-family: "Merriweather", serif;
+  font-weight: bold;
+}
+
+.comment {
+  opacity: 0.3;
+  font-family: "Merriweather", serif;
+}
+
+.comment h3 {
+  font-size: 1.5rem;
 }
 
 /* FOOTER SECTION */
 
 #footer {
+  padding: 15px 0%;
   text-align: center;
   color: aliceblue;
   background-color: black;
+}
+
+.footerContent h2 {
+  font-family: "Pacifico", cursive;
+  font-size: 1.5rem;
 }
