@@ -1,6 +1,7 @@
 html,
 body {
   font-family: "Montserrat", sans-serif;
+  overflow-x: hidden;
 }
 
 /* NAVBAR SECTION */
@@ -14,7 +15,7 @@ body {
   -o-transition: all 0.5s ease-out;
   -ms-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
-  z-index: 1;
+  z-index: 2;
 }
 
 .navbar.scrolled {
@@ -107,13 +108,13 @@ body {
 /* SEJARAH SECTION */
 .sejarah {
   margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 .sejarah img {
   border-radius: 12px;
   margin-top: 20px;
   margin-right: 20px;
-  margin-bottom: 30px;
 }
 
 .sejarah a {
@@ -124,10 +125,10 @@ body {
 }
 
 .sejarah h3 {
-  font-size: 52px;
-  font-weight: 200;
-  text-transform: uppercase;
+  font-size: 42px;
+  font-weight: bold;
   margin-top: 30px;
+  font-family: "Merriweather", serif;
 }
 
 .sejarah p {
@@ -142,6 +143,51 @@ body {
   color: #6b6b6b;
   font-weight: 200;
   margin-top: 10px;
+}
+
+/* OVERFLOW CARD SECTION */
+
+.card {
+  display: inline-block;
+  box-shadow: 0 3px 20px rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+  margin-right: 5px;
+  height: 570px;
+  width: 300px;
+}
+
+.card a {
+  font-size: 12px;
+  color: rgb(17, 25, 182);
+  font-weight: 200;
+  margin-top: 10px;
+}
+
+.card h5 {
+  margin-top: -7px;
+}
+
+.card p {
+  font-size: 14px;
+  color: #6b6b6b;
+  font-weight: 200;
+  height: 100px;
+  white-space: normal;
+}
+
+.card-img-top {
+  height: 350px;
+}
+/* .card-body {
+    white-space: normal;
+  } */
+
+.overflow-card {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
+  height: 641px;
 }
 
 /* CAROUSEL SECTION */
@@ -259,6 +305,12 @@ body {
     margin-bottom: 100px;
   }
 
+  .sejarah img {
+    margin-bottom: 150px;
+  }
+
+  .sejarah a {
+  }
   .sejarah .gambar-sejarah {
     margin-right: 150px;
   }
