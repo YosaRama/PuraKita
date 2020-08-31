@@ -1,45 +1,12 @@
 html,
 body {
-  width: 100%;
-  height: auto;
-  overflow-x: hidden;
   font-family: "Montserrat", sans-serif;
+  overflow-x: hidden;
 }
 
-/* MENU SECTION */
-
-#menuSection {
-  background-color: black;
-  color: aliceblue;
-  text-align: center;
-}
+/* NAVBAR SECTION */
 .navbar-brand {
   font-family: "Pacifico", cursive;
-}
-.menuBackground {
-  position: relative;
-  z-index: 0;
-  opacity: 40%;
-  padding: 0%;
-}
-
-.menuTitle {
-  top: 30vw;
-  bottom: 0%;
-  position: absolute;
-}
-
-.menuTitle h1 {
-  font-family: "Pacifico", cursive;
-  font-size: 5vh;
-}
-
-.menuContent {
-  padding: 0%;
-}
-
-.menuUnderline {
-  border: aliceblue 3px solid;
 }
 
 .navbar {
@@ -48,6 +15,7 @@ body {
   -o-transition: all 0.5s ease-out;
   -ms-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
+  z-index: 2;
 }
 
 .navbar.scrolled {
@@ -55,8 +23,174 @@ body {
   background: rgba(0, 0, 0, 1); /* NON-IE */
 }
 
-/* CAROUSEL SECTION */
+/* JUMBOTRON SECTION */
+.menuUnderline {
+  border: aliceblue 3px solid;
+}
 
+.jumbotron {
+  background-image: url(../images/Kintamani.jpg);
+  background-size: cover;
+  height: 400px;
+  position: relative;
+}
+
+.jumbotron::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  bottom: 0px;
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+}
+
+.jumbotron .container {
+  z-index: 1;
+  position: relative;
+  align-content: center;
+}
+
+.jumbotron .display-4 {
+  color: white;
+  text-align: center;
+  margin-top: 150px;
+  margin-bottom: 30px;
+  font-family: "Pacifico", cursive;
+  font-size: 5vh;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+}
+
+.jumbotron .lead {
+  color: white;
+  text-align: center;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.7);
+  font-size: 2vh;
+}
+
+.jumbotron .sub-lead {
+  color: white;
+  text-align: center;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.7);
+  font-size: 1.5vh;
+}
+
+/* INFO PANEL SECTION */
+.info-panel {
+  background-color: white;
+  box-shadow: 0 3px 20px rgba(0, 0, 0, 0.5);
+  border-radius: 12px;
+}
+
+.info-panel img {
+  width: 80px;
+  border-radius: 12px;
+  height: 80px;
+  margin-top: 20px;
+  margin-right: 20px;
+  margin-bottom: 30px;
+}
+
+.info-panel h4 {
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.info-panel p {
+  font-size: 14px;
+  color: #acacac;
+  font-weight: 200;
+  margin-top: 10px;
+}
+
+/* SEJARAH SECTION */
+.sejarah {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.sejarah img {
+  border-radius: 12px;
+  margin-top: 20px;
+  margin-right: 20px;
+}
+
+.sejarah a {
+  font-size: 12px;
+  color: rgb(17, 25, 182);
+  font-weight: 200;
+  margin-top: 10px;
+}
+
+.sejarah h3 {
+  font-size: 42px;
+  font-weight: bold;
+  margin-top: 30px;
+  font-family: "Merriweather", serif;
+}
+
+.sejarah p {
+  font-size: 14px;
+  color: #6b6b6b;
+  font-weight: 200;
+  margin-top: 10px;
+}
+
+.sejarah .tab-pane {
+  font-size: 14px;
+  color: #6b6b6b;
+  font-weight: 200;
+  margin-top: 10px;
+}
+
+/* OVERFLOW CARD SECTION */
+
+.card {
+  display: inline-block;
+  box-shadow: 0 3px 20px rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+  margin-right: 5px;
+  height: 570px;
+  width: 300px;
+}
+
+.card a {
+  font-size: 12px;
+  color: rgb(17, 25, 182);
+  font-weight: 200;
+  margin-top: 10px;
+}
+
+.card h5 {
+  margin-top: -7px;
+}
+
+.card p {
+  font-size: 14px;
+  color: #6b6b6b;
+  font-weight: 200;
+  height: 100px;
+  white-space: normal;
+}
+
+.card-img-top {
+  height: 350px;
+}
+/* .card-body {
+    white-space: normal;
+  } */
+
+.overflow-card {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
+  height: 641px;
+}
+
+/* CAROUSEL SECTION */
 #carouselContentSection {
   text-align: left;
 }
@@ -158,4 +292,26 @@ body {
 .footerContent h2 {
   font-family: "Pacifico", cursive;
   font-size: 1.5rem;
+}
+
+@media (min-width: 992px) {
+  .jumbotron {
+    margin-top: -25px;
+    height: 640px;
+  }
+
+  .info-panel {
+    margin-top: -100px;
+    margin-bottom: 100px;
+  }
+
+  .sejarah img {
+    margin-bottom: 150px;
+  }
+
+  .sejarah a {
+  }
+  .sejarah .gambar-sejarah {
+    margin-right: 150px;
+  }
 }
