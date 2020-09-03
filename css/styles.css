@@ -107,14 +107,11 @@ body {
 
 /* SEJARAH SECTION */
 .sejarah {
-  margin-top: 50px;
-  margin-bottom: 50px;
+  padding: 100px 20px 12.5%;
 }
 
 .sejarah img {
   border-radius: 12px;
-  margin-top: 20px;
-  margin-right: 20px;
 }
 
 .sejarah a {
@@ -147,13 +144,17 @@ body {
 
 /* OVERFLOW CARD SECTION */
 
+#overflow-card {
+  padding: 5% 0%;
+  background-color: #f6f6f6;
+}
+
 .card {
   display: inline-block;
   box-shadow: 0 3px 20px rgba(0, 0, 0, 0.5);
   border-radius: 15px;
-  margin-right: 5px;
-  height: 570px;
-  width: 300px;
+  margin-right: 10px;
+  width: 250px;
 }
 
 .card a {
@@ -176,18 +177,19 @@ body {
 }
 
 .card-img-top {
-  height: 350px;
+  width: 250px;
+  height: 250px;
 }
-/* .card-body {
-    white-space: normal;
-  } */
+.card-body {
+  white-space: normal;
+}
 
 .overflow-card {
   overflow-x: scroll;
   overflow-y: hidden;
   white-space: nowrap;
   -webkit-overflow-scrolling: touch;
-  height: 641px;
+  padding: 0px 0px 20px;
 }
 
 /* CAROUSEL SECTION */
@@ -303,15 +305,5 @@ body {
   .info-panel {
     margin-top: -100px;
     margin-bottom: 100px;
-  }
-
-  .sejarah img {
-    margin-bottom: 150px;
-  }
-
-  .sejarah a {
-  }
-  .sejarah .gambar-sejarah {
-    margin-right: 150px;
   }
 }
