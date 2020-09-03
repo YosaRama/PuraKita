@@ -153,7 +153,7 @@ body {
   display: inline-block;
   box-shadow: 0 3px 20px rgba(0, 0, 0, 0.5);
   border-radius: 15px;
-  margin-right: 10px;
+  margin: 0px 10px 0px 10px;
   width: 250px;
 }
 
@@ -192,63 +192,6 @@ body {
   padding: 0px 0px 20px;
 }
 
-/* CAROUSEL SECTION */
-#carouselContentSection {
-  text-align: left;
-}
-
-.content {
-  text-align: center;
-  font-size: 1.2rem;
-  padding-bottom: 50px;
-}
-
-.content h3 {
-  padding: 7% 0%;
-  font-family: "Merriweather", serif;
-  font-size: 2.5rem;
-}
-
-.contentImg {
-  padding: 0%;
-}
-
-/* DONATION SECTION */
-
-#donationSection {
-  background-color: black;
-  color: aliceblue;
-  text-align: center;
-  padding: 3%;
-}
-
-.donationContent p {
-  margin: 20px 0%;
-  font-size: 1.2rem;
-}
-
-.donationContent h1 {
-  font-family: "Pacifico", cursive;
-  font-size: 3rem;
-  padding-bottom: 5%;
-}
-
-.totalDonation {
-  color: white;
-  border: white solid 2px;
-  border-radius: 40px;
-  opacity: 0.8;
-}
-
-.donationButton {
-  border: hidden;
-  border-radius: 50px;
-}
-
-.gopayDonation {
-  width: 200px;
-}
-
 /* DONATOR SECTION */
 
 #donator {
@@ -257,10 +200,10 @@ body {
 }
 
 .donatorImg {
-  border: black solid 10px;
+  border: solid 1px 0.89;
   border-radius: 100%;
-  width: 300px;
-  height: 300px;
+  width: 200px;
+  height: 200px;
 }
 
 .donatorBio {
@@ -282,6 +225,43 @@ body {
   font-size: 1.5rem;
 }
 
+/* DONATION SECTION */
+
+#donationSection {
+  background-color: #f6f6f6;
+  color: black;
+  text-align: center;
+  padding: 3%;
+}
+
+.donationContent p {
+  margin: 20px 0%;
+  font-size: 1.2rem;
+}
+
+.donationContent h1 {
+  font-family: "Pacifico", cursive;
+  font-size: 3rem;
+}
+
+.donationContent h3 {
+  border: #6b6b6b solid 2px;
+  border-radius: 5px;
+  font-size: 2rem;
+  color: #6b6b6b;
+  opacity: 0.6;
+}
+
+.donationButton {
+  border: solid #6b6b6b;
+  border-radius: 15px;
+  margin-top: 25px;
+}
+
+.gopayDonation {
+  border: hidden;
+  width: 200px;
+}
 /* FOOTER SECTION */
 
 #footer {
