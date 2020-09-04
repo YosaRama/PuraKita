@@ -429,11 +429,28 @@
           checkScroll();
         });
       }
-      $(".overflow-card").slick({
-        infinite: true,
-        slidesToShow: 5,
-        slidesToScroll: 2,
-      });
+    </script>
+    <script>
+      if (matchMedia) {
+        const x = window.matchMedia("(min-width : 992px");
+        x.addListener(responsiveCard);
+        responsiveCard(x);
+      }
+      function responsiveCard(x) {
+        if (x.matches) {
+          $(".overflow-card").slick({
+            infinite: true,
+            slidesToShow: 5,
+            slidesToScroll: 3,
+          });
+        } else {
+          $(".overflow-card").slick({
+            infinite: true,
+            slidesToShow: 2,
+            slidesToScroll: 2,
+          });
+        }
+      }
     </script>
   </body>
 
