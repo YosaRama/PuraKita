@@ -2,6 +2,7 @@ html,
 body {
   font-family: "Montserrat", sans-serif;
   overflow-x: hidden;
+  scroll-behavior: smooth; /* <----- THE SECRET ---- */
 }
 
 /* NAVBAR SECTION */
@@ -105,9 +106,63 @@ body {
   margin-top: 10px;
 }
 
+.info-panel .link-block {
+  display: block;
+  transition: 0.3s;
+}
+
+.info-panel .link-block a {
+  text-decoration: none;
+}
+.link-block:hover {
+  transform: scale(1.02);
+  cursor: pointer;
+  color: #0eb2ff !important;
+  border-top-color: #0eb2ff;
+}
+
+/* MAPS SECTION */
+
+#maps {
+  background-color: #f6f6f6;
+}
+
+.maps-container {
+  padding: 80px 20px 80px 20px;
+}
+
+.maps-container h3 {
+  font-size: 42px;
+  font-weight: bold;
+  margin-top: 30px;
+  font-family: "Merriweather", serif;
+}
+
+.maps-container a {
+  font-size: 12px;
+  color: rgb(17, 25, 182);
+  font-weight: 200;
+  margin-top: 10px;
+}
+
+.maps-container .maps-box {
+  padding-top: 25px;
+}
+
+.mapouter {
+  position: relative;
+  text-align: right;
+}
+.gmap_canvas {
+  box-shadow: 0 3px 20px rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+  overflow: hidden;
+  background: none !important;
+}
+
 /* SEJARAH SECTION */
 .sejarah {
-  padding: 100px 20px 12.5%;
+  padding: 80px 20px;
 }
 
 .sejarah img {
@@ -149,12 +204,27 @@ body {
   background-color: #f6f6f6;
 }
 
+.card-upper-container h3 {
+  text-align: center;
+  font-size: 42px;
+  font-weight: bold;
+  font-family: "Merriweather", serif;
+}
+
+.card-upper-container p {
+  text-align: center;
+  font-size: 14px;
+  color: #6b6b6b;
+  font-weight: 200;
+  padding-bottom: 50px;
+}
+
 .card {
   display: inline-block;
   box-shadow: 0 3px 20px rgba(0, 0, 0, 0.5);
   border-radius: 15px;
-  margin: 0px 10px 0px 10px;
-  width: 250px;
+  margin: 0px 10px;
+  width: 300px;
 }
 
 .card a {
@@ -177,19 +247,19 @@ body {
 }
 
 .card-img-top {
-  width: 250px;
+  width: 100%;
   height: 250px;
 }
 .card-body {
   white-space: normal;
 }
-
-.overflow-card {
-  overflow-x: scroll;
-  overflow-y: hidden;
-  white-space: nowrap;
-  -webkit-overflow-scrolling: touch;
-  padding: 0px 0px 20px;
+.slick-prev:before {
+  color: grey !important;
+  background-color: #eee;
+}
+.slick-next:before {
+  color: grey !important;
+  background-color: #eee;
 }
 
 /* DONATOR SECTION */
@@ -285,5 +355,23 @@ body {
   .info-panel {
     margin-top: -100px;
     margin-bottom: 100px;
+  }
+  .mapouter {
+    position: relative;
+    text-align: right;
+    height: 500px;
+    width: 500px;
+  }
+  .gmap_canvas {
+    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    overflow: hidden;
+    background: none !important;
+    height: 500px;
+    width: 500px;
+  }
+
+  .maps-container .maps-box {
+    padding-top: 0px;
   }
 }
