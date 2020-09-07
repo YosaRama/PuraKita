@@ -34,9 +34,8 @@ body {
 }
 
 .jumbotron {
-  background-image: url(../images/Kintamani.jpg);
-  background-size: cover;
-  height: 400px;
+  background-image: url(../images/Cover.jpg);
+  background-size: auto;
   position: relative;
 }
 
@@ -178,6 +177,8 @@ body {
 
 .sejarah img {
   border-radius: 12px;
+  width: 500px;
+  height: 350px;
 }
 
 .sejarah a {
@@ -236,6 +237,14 @@ body {
   border-radius: 15px;
   margin: 0px 10px;
   width: 300px;
+  margin: 30px 0px;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+  color: #0eb2ff !important;
+  border-top-color: #0eb2ff;
 }
 
 .card a {
@@ -259,7 +268,7 @@ body {
 
 .card-img-top {
   width: 100%;
-  height: 250px;
+  height: 50%;
 }
 .card-body {
   white-space: normal;
@@ -273,6 +282,9 @@ body {
   background-color: #eee;
 }
 
+.modalImg {
+  width: 100%;
+}
 /* DONATOR SECTION */
 
 #donator {
@@ -384,5 +396,17 @@ body {
 
   .maps-container .maps-box {
     padding-top: 0px;
+  }
+
+  .modalImg {
+    margin-left: 0%;
+    padding-left: 0%;
+    width: 100%;
+    display: inline;
+    position: relative;
+  }
+
+  .cardDescription {
+    display: inline;
   }
 }
